@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Cards en un Renglón</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 260px;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .card h2 {
+            margin: 15px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propuestas Loading</h1>
+    <div class="card-container w150">
+        <div class="card"> <img src="./CPAIA-loading.gif" alt="Imagen 1">
+            <h2>Propuesta 1</h2>
+        </div>
+        <div class="card"> <img src="./CPAIA-loading2.gif" alt="Imagen 2">
+            <h2>Propuesta 2</h2>
+        </div>
+    </div>
+</body>
