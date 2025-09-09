@@ -2,62 +2,98 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4 Cards en un Renglón</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background-color: #f0f0f0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading CPA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: normal;
+      margin-top: 80px;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
 
-        h1 {
-            margin: 20px 0;
-        }
+    h1 {
+      margin: 20px 0;
+    }
 
-        .card-container {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
+    .card-container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 
-        .card {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 260px;
-            text-align: center;
-            padding: 20px 0;
-        }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 260px;
+      text-align: center;
+      padding: 20px 0;
+    }
 
-        .card img {
-            width: 50px;
-            height: 50px;
-        }
+    .card img.px200 {
+      width: 200px;
+      height: 200px;
+    }
 
-        .card h2 {
-            margin: 15px 0;
-        }
-    </style>
+    .card img.px100 {
+      width: 100px;
+      height: 100px;
+    }
+
+    .card img.px70 {
+      width: 70px;
+      height: 70px;
+    }
+
+    .card img.px50 {
+      width: 50px;
+      height: 50px;
+    }
+
+    .card img.px30 {
+      width: 30px;
+      height: 30px;
+    }
+
+    .card h4 {
+      margin: 20px 0;
+    }
+  </style>
 </head>
 
 <body>
-    <h1>Propuestas Loading</h1>
-    <div class="card-container w150">
-        <div class="card"> <img src="./CPAIA-loading.gif" alt="Imagen 1">
-            <h2>Propuesta 1</h2>
-        </div>
-        <div class="card"> <img src="./CPAIA-loading2.gif" alt="Imagen 2">
-            <h2>Propuesta 2</h2>
-        </div>
+  <h1>CPA GIF para Loading</h1>
+  <div class="card-container w150">
+    <div class="card">
+      <h4>200x200</h4>
+      <img class="px200" src="./CPA-loading.gif" alt="CPA Cargando Información">
     </div>
+    <div class="card">
+      <h4>100x100</h4>
+      <img class="px100" src="./CPA-loading.gif" alt="CPA Cargando Información">
+    </div>
+    <div class="card">
+      <h4>70x70</h4>
+      <img class="px70" src="./CPA-loading.gif" alt="CPA Cargando Información">
+    </div>
+    <div class="card">
+      <h4>50x50</h4>
+      <img class="px50" src="./CPA-loading.gif" alt="CPA Cargando Información">
+    </div>
+    <div class="card">
+      <h4>30x30</h4>
+      <img class="px30" src="./CPA-loading.gif" alt="CPA Cargando Información">
+
+    </div>
+  </div>
 </body>
